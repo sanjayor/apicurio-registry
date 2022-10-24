@@ -21,7 +21,13 @@ import io.quarkus.runtime.annotations.RegisterForReflection;
 @RegisterForReflection
 public class SchemaTypeFilter {
 
-    @Override
+    
+	/* ********OpenRefactory Warning********
+	 The class 'SchemaTypeFilter' only overrides 'equals' method.
+	 iCR suggests that both 'equals' and 'hashCode' should be overridden.
+	*/
+
+	@Override
     public boolean equals(Object obj) {
         if (!(obj instanceof String)) {
             return true;
